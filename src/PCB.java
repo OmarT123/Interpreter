@@ -26,7 +26,16 @@ public class PCB implements MemoryElement{
 	public int getBase() {
 		return memoryBoundary[0];
 	}
+	public int getPC() {
+		return PC;
+	}
 	public int getLimit() {
 		return memoryBoundary[1];
+	}
+	public void setState(State state) {
+		this.state = state;
+	}
+	public int getID() {
+		return this.processID;
 	}
 }
